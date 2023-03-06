@@ -3,18 +3,18 @@
     margin: 0%;
 }
 #app {
-    width: 350px;
+    width: 355px;
     height: 236px;
     margin: 5%;
     box-shadow: 0 3px 15px grey;
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    background-color: #13202c;
 }
 input[type=text] {
     width: 192px;
     height: 30px;
-    
     text-align: right;
     color: #243849;
 }
@@ -27,6 +27,7 @@ input[type=text] {
 .button__operators {
     flex-direction: row;
     width: 150px;
+    
 }
 .cell {
     flex: 32%;
