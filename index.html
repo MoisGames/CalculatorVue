@@ -10,13 +10,17 @@
 </head>
 <body>
     <div id="app">
-       <div class="grid">
-            <input @keyup.enter="calc()" type="text" v-model="result" placeholder="0">
-            <button @click="input(num)" class="cell num" v-for="num in numbers">{{num}}</button>
-            <button @click="input(op)" class="cell op"  v-for="op in operations">{{op}} </button>
-            <button @click="reset()" class="cell op">C</button>
-            <button @click="calc()" class="cell op">=</button>
-       </div>
+        <input @keyup.enter="calc()" type="text" v-model="result" placeholder="0">
+            <div class="button__num">
+                <button @click="input(num)" class="cell num" v-for="num in numbers">{{num}}</button>
+            </div>
+            <div class="button__operators">
+                <button @click="input(op)" class="cell op"  v-for="op in operations">{{op}} </button>
+                <button @click="reset()" class="cell op">C</button>
+                <button @click="calc()" class="cell op">=</button>
+                <button @click="quad()" class="cell op">x²</button>
+                <button @click="sqrt()" class="cell op">sqrt</button>
+            </div>
     </div>
 </body>
 <script src="scripts/script.js"></script>

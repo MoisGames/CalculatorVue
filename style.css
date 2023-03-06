@@ -1,25 +1,35 @@
 * {
     font-weight: 600;
+    margin: 0%;
 }
 #app {
-    width: 200px;
+    width: 350px;
+    height: 236px;
     margin: 5%;
     box-shadow: 0 3px 15px grey;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
 }
 input[type=text] {
-    width: 200px;
-    padding: 5px 5px;
+    width: 192px;
+    height: 30px;
+    
     text-align: right;
     color: #243849;
 }
-.grid {
+.button__num, .button__operators {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    width: 200px;
+}
+.button__operators {
+    flex-direction: row;
+    width: 150px;
 }
 .cell {
-    flex: 33%;
+    flex: 32%;
     flex-wrap: wrap;
     height: 50px;
     font-size: 18px;
@@ -27,6 +37,10 @@ input[type=text] {
 }
 .cell:hover {
     background-color: #1c2c3a;
+}
+.op {
+    height: 59px;
+    flex: 50%;
 }
 .num {
     background-color: #243849;

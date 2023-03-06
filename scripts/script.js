@@ -16,6 +16,12 @@ var vue = new Vue ( {
         calc: function() {
             this.result = eval(this.result);
 
+        },
+        quad: function() {
+            this.result = this.result * this.result;
+        },
+        sqrt: function() {
+            this.result = Math.sqrt(this.result);
         }
     }
 })
